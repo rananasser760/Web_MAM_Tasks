@@ -1,0 +1,128 @@
+body{
+background-color: #c7cdd1;
+
+}
+h1 {
+    text-align: center;
+    margin: 25px;
+}
+
+h1:hover {
+    background-color: #500b7e;
+    padding: 10px;
+    color: #d48f27;
+    font-size: 40px;
+}
+
+.container {
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    margin: auto;
+    display: grid;
+    gap: 15px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto;
+}
+
+.container div {
+    overflow: hidden;
+}
+
+.container div img {
+    width: 100%;
+    height: 100%;
+}
+
+.leftCar {
+    grid-row: span 3;
+    height: 930px;
+    position: relative;
+    overflow: hidden;
+}
+
+#car3 {
+    grid-column: span 2;
+    height: 300px;
+}
+
+.cars {
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+}
+
+.bg_text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    visibility: hidden;
+    transition: transform 1s ease, visibility 0s;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.leftCar:hover .bg_text {
+    visibility: visible;
+    transform: translateX(0);
+}
+
+.text {
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+.car {
+    background-color: rgba(0, 0, 255, 0.5);
+    z-index: 100;
+    height: 300px;
+    width: 100%;
+    position: absolute;
+    left: -100%;
+    visibility: hidden;
+    transition: all 2s ease;
+}
+
+.cars:hover .car {
+    visibility: visible;
+    transform: translateX(100%);
+}
+
+@media (max-width:900px) {
+    
+        .container {
+            grid-template-columns: auto auto;
+        }
+    
+        .leftCar {
+            grid-row: 1/3;
+            height: 615px;
+        }
+    
+        #car3 {
+            grid-column: 1/3;
+        }
+        }
+    
+        @media (max-width: 600px) {
+    
+            .container {
+                grid-template-columns: auto;
+            }
+    
+            .leftCar {
+                grid-row: 1/2;
+                height: 615px;
+            }
+    
+            #car3 {
+                grid-column: 1/2;
+            }
+        }
