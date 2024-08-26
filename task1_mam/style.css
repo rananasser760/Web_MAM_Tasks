@@ -1,0 +1,23 @@
+img{
+    width: 100%;
+    /* height: 300px; */
+    text-align: center;
+    border-radius: 30px;
+}
+.pink{
+    background-color: rgb(255, 216, 223);
+    height: 160px;
+    padding: 20px 20px;
+    text-align: left;
+    border-radius: 20px;
+}
+h2{
+    color: rgb(203, 0, 0);
+}
+h1, p{
+    text-align: left;
+}
+.main{
+    text-align: center;
+    margin: 20px 50px;
+}

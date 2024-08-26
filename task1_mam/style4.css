@@ -1,0 +1,32 @@
+body{
+    background-color: #eeeeee;
+}
+.d1{
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    z-index: 2;
+    
+}
+.d1:hover{
+    background-color: orange;
+    text-align: center;
+    padding: 20px;
+    /* visibility: hidden; */
+    z-index: 0;
+}
+.d1:hover div
+{
+    visibility: visible;
+}
+.d3 {
+    background-color: rgb(0, 125, 25);
+    text-align: center;
+    margin: 50px 20px;
+    color: white;
+    padding: 10px;
+    z-index: 1;
+    visibility: hidden;
+}
+
